@@ -1,14 +1,11 @@
 
 function Init() {
-	var canvas = document.getElementById("MainCanvas");
+	const canvas = document.getElementById("MainCanvas");
 
 	function Update() {
-			
-		requestAnimationFrame(Update);
+				renderer.render( scene, camera );
 	}
 
-
-	
 	Update();
 	
 }
